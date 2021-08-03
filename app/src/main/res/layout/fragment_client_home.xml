@@ -13,6 +13,9 @@
         android:id="@+id/dashboard_activity_content_layout"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+        <include
+            android:id="@+id/fragment_client_home_include_home"
+            layout="@layout/home"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

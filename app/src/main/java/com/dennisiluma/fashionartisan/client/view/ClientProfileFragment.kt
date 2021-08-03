@@ -1,16 +1,14 @@
 package com.dennisiluma.fashionartisan.client.view
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.dennisiluma.fashionartisan.R
-import com.dennisiluma.fashionartisan.databinding.FragmentClientDashboardBinding
-import com.dennisiluma.fashionartisan.databinding.FragmentSignupBinding
+import androidx.fragment.app.Fragment
+import com.dennisiluma.fashionartisan.databinding.FragmentClientProfileBinding
 
-class ClientDashboardFragment : Fragment() {
-    private var _binding: FragmentClientDashboardBinding? = null
+class ClientProfileFragment : Fragment() {
+    private var _binding:FragmentClientProfileBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -18,8 +16,7 @@ class ClientDashboardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        //inflate the layer for this fragment
-        _binding = FragmentClientDashboardBinding.inflate(inflater, container, false)
+        _binding = FragmentClientProfileBinding.inflate(inflater, container, false)
         return binding.root
     }
 

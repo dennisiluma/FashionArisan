@@ -11,11 +11,10 @@
     <color name="royal_blue">#4169E1</color>
     <color name="ndigo_blue">#4B0082</color>
     <color name="text_gray_text_field_color">#EEEEEE</color>
-
+    <color name="text_gray">#ADBACD</color>
+    <color name="navy_blue">#0A2E65</color>
     <color name="text_indicator_gray">#EEEEEE</color>
-
     <color name="gray">#F2F2F2</color>
-
     <color name="medium_gray">#DADADA</color>
     <color name="deep_sky_blue">#0066F5</color>
 </resources>
