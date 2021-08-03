@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".starter.EmailverificationFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fragment_emailverification_text_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="@dimen/margin_60dp"
+        android:layout_marginStart="@dimen/corner_radius_20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="A verification link has been sent, go to your email and click on the verification link to verify"/>
+
+    <Button
+        android:id="@+id/fragment_emailverification_button"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/height_50dp"
+        android:layout_marginStart="@dimen/corner_radius_20dp"
+        app:layout_constraintStart_toStartOf="@id/fragment_emailverification_text_text_view"
+        app:layout_constraintTop_toBottomOf="@id/fragment_emailverification_text_text_view"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/royal_blue"
+        android:text="Go to Your Mail"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
