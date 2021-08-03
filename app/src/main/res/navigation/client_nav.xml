@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/client_nav"
+    app:startDestination="@id/clientHomeFragment">
+
+    <fragment
+        android:id="@+id/clientHomeFragment"
+        android:name="com.dennisiluma.fashionartisan.client.view.ClientHomeFragment"
+        android:label="fragment_client_home"
+        tools:layout="@layout/fragment_client_home" >
+        <action
+            android:id="@+id/action_clientHomeFragment_to_clientProfileFragment"
+            app:destination="@id/clientProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientProfileFragment"
+        android:name="com.dennisiluma.fashionartisan.client.view.ClientProfileFragment"
+        android:label="fragment_client_profile"
+        tools:layout="@layout/fragment_client_profile" >
+        <action
+            android:id="@+id/action_clientProfileFragment_to_clientEditProfileFragment"
+            app:destination="@id/clientEditProfileFragment" />
+        <action
+            android:id="@+id/action_clientProfileFragment_to_clientEditProfileFragment2"
+            app:destination="@id/clientEditProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientEditProfileFragment"
+        android:name="com.dennisiluma.fashionartisan.client.view.ClientEditProfileFragment"
+        android:label="fragment_client_edit_profile"
+        tools:layout="@layout/fragment_client_edit_profile" />
+</navigation>

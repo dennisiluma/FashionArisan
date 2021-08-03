@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_drawer_body_profile"
+            android:icon="@drawable/person_icon"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/nav_drawer_body_posts"
+            android:icon="@drawable/list_icon"
+            android:title="Posts" />
+        <item
+            android:id="@+id/nav_drawer_body_designers"
+            android:icon="@drawable/friend_icon"
+            android:title="Designers" />
+        <item android:id="@+id/nav_drawer_body_orders"
+            android:icon="@drawable/orders_icon"
+            android:title="My Orders"/>
+        <item android:id="@+id/nav_drawer_body_settings"
+            android:icon="@drawable/settings_icon"
+            android:title="Settings"/>
+    </group>
+</menu>
