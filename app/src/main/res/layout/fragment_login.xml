@@ -77,34 +77,31 @@
             app:layout_constraintTop_toBottomOf="@+id/fragment_login_password_edit_text_layout" />
 
         <TextView
-            android:id="@+id/fragment_login_log_dont_have_account_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_76dp"
-            android:fontFamily="@font/poppins"
-            android:text="Don't Have an Account?"
-            android:textColor="@color/black"
-            android:layout_marginTop="@dimen/margin_10dp"
+            android:id="@+id/login_fragment_forget_password_text_view"
+            style="@style/wrap_content_wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Forgot Password?"
+            android:textColor="@color/royal_blue"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/fragment_login_log_signup_text_view"
-            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintEnd_toEndOf="@+id/fragment_login_log_in_button"
             app:layout_constraintStart_toStartOf="@+id/fragment_login_log_in_button"
             app:layout_constraintTop_toBottomOf="@+id/fragment_login_log_in_button"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintHorizontal_bias="0.0"/>
 
-        <TextView
-            android:id="@+id/fragment_login_log_signup_text_view"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragment_login_signup_button"
+            style="@style/login_fragment_material_button"
+            android:text="Create an Account"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_18dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="Sign-Up"
-            android:textSize="16sp"
-            android:layout_marginTop="@dimen/margin_7dp"
-            android:textColor="@color/royal_blue"
-            app:cardCornerRadius="20dp"
-            app:layout_constraintStart_toEndOf="@+id/fragment_login_log_dont_have_account_text_view"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_login_log_in_button" />
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/royal_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/login_fragment_forget_password_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/login_fragment_forget_password_text_view"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

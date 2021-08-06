@@ -109,8 +109,9 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/fragment_sign_up_account_category_text_layout"
+            android:id="@+id/fragment_sign_up_gender_text_layout"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -126,17 +127,76 @@
             app:layout_constraintTop_toBottomOf="@+id/fragment_sign_up_phone_number_edit_text_layout">
 
             <AutoCompleteTextView
-                android:id="@+id/email_sign_up_fragment_account_category_text_view"
+                android:id="@+id/fragment_sign_up_gender_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/white"
                 android:inputType="none"
                 android:paddingBottom="@dimen/margin_18dp"
-                android:text="Choose Account Categoty"
+                android:text="Select Your Gender"
                 android:textColor="@color/black"
                 android:textCursorDrawable="@color/gray" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_sign_up_account_category_text_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_18dp"
+            android:layout_marginTop="@dimen/margin_9dp"
+            android:fontFamily="@font/poppins"
+            app:boxStrokeColor="@color/text_indicator_gray"
+            app:endIconDrawable="@drawable/account_category_arrow_down"
+            app:endIconTint="@color/black"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_sign_up_gender_text_layout">
+
+            <AutoCompleteTextView
+                android:id="@+id/fragment_sign_up_account_category_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:inputType="none"
+                android:paddingBottom="@dimen/margin_18dp"
+                android:text="Choose Account Category"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@color/gray" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_sign_up_state_text_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_18dp"
+            android:layout_marginTop="@dimen/margin_9dp"
+            android:fontFamily="@font/poppins"
+            app:boxStrokeColor="@color/text_indicator_gray"
+            app:endIconDrawable="@drawable/account_category_arrow_down"
+            app:endIconTint="@color/black"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_sign_up_account_category_text_layout">
+
+            <AutoCompleteTextView
+                android:id="@+id/fragment_sign_up_state_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:inputType="none"
+                android:paddingBottom="@dimen/margin_18dp"
+                android:text="Select Your State Of Residence"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@color/gray" />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/fragment_sign_up_email_edit_text_layout"
@@ -152,7 +212,7 @@
             app:hintTextColor="@color/gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_sign_up_account_category_text_layout">
+            app:layout_constraintTop_toBottomOf="@+id/fragment_sign_up_state_text_layout">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/fragment_sign_up_email_edit_text"
@@ -244,29 +304,30 @@
             android:id="@+id/fragment_sign_up_have_account_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_76dp"
             android:fontFamily="@font/poppins"
             android:text="Already Have an Account"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/fragment_sign_up_signup_button"
-            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintVertical_bias="0.5"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginBottom="@dimen/margin_20dp"
             app:layout_constraintStart_toStartOf="@+id/fragment_sign_up_signup_button"
-            app:layout_constraintTop_toTopOf="@+id/fragment_sign_up_login_text_view"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/fragment_sign_up_signup_button"/>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/fragment_sign_up_login_text_view"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_18dp"
-            android:layout_marginTop="@dimen/margin_18dp"
+            style="@style/wrap_content_wrap_content"
             android:fontFamily="@font/poppins_semibold"
             android:text="Login"
-            android:background="@color/royal_blue"
-            android:textColor="@color/white"
+            android:padding="@dimen/padding_10dp"
+            android:textColor="@color/royal_blue"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fragment_sign_up_signup_button"
             app:layout_constraintStart_toEndOf="@+id/fragment_sign_up_have_account_text_view"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_sign_up_signup_button" />
+            app:layout_constraintTop_toBottomOf="@+id/fragment_sign_up_signup_button"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
