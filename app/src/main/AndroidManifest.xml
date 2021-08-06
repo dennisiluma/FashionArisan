@@ -12,16 +12,23 @@
         <activity
             android:name=".client.view.ClientActivity"
             android:exported="true" />
-        <activity android:name=".starter.SplashScreenActivity"
-            android:exported="true"/>
+
+
+        <activity
+            android:name=".starter.SplashScreenActivity"
+            android:theme="@style/SplashTheme"
+            android:launchMode="singleTask"
+            android:screenOrientation="unspecified"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
         <activity
             android:name=".starter.MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
